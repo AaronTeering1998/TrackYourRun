@@ -1,0 +1,134 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    background-color: #4E5166;
+}
+
+body {
+    padding: 1rem;
+    background: #747274;
+    color: #E2E8DD;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    margin: 0 auto;
+    max-width: fit-content;
+}
+
+.logo svg {
+    width: 2.5rem;
+    height: auto;
+    margin-left: .5rem;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    font-size: 1.8rem;
+}
+
+input[type="number"] {
+    font-family: inherit;
+    background-color: #E2E8DD;
+    width: 80%;
+    margin: 1rem 0;
+    padding: 0.8rem 0;
+    border: none;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+button {
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 100%;
+    border: none;
+    background-color: #B7D1DA;
+    margin: 0.5rem 0 1rem 0;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+li {
+    border: solid 1px #E2E8DD;
+    padding: 1rem 1.5rem;
+}
+
+.entriesWrapper {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+}
+
+.entriesWrapper h3 {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.data {
+    font-size: 1.4rem;
+}
+
+.data div {
+    background-color: #4E5166;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: .5rem 0;
+    padding: 0 1rem;
+}
+
+.progress {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.progress h3 {
+    font-size: 1.6rem;
+    font-weight: lighter;
+}
+
+.progressCircleWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#progressCircle {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    background: conic-gradient(#70db70 0%, #4E5166 0% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#progressCenter {
+    background: #747274;
+    width: 22rem;
+    height: 22rem;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        width: 60%;
+    }
+
+    input[type="number"] {
+        width: 40%;
+    }
+}
