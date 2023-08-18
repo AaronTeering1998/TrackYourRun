@@ -1,4 +1,4 @@
-const goal = 25;
+let goal = 25;
 let entries = [];
 const entriesWrapper = document.getElementById("entries"); 
 document.querySelector('#target').innerText = goal;
@@ -39,6 +39,14 @@ function calcGoal() {
     progressCircle.style.background = `conic-gradient(#70db70 ${completedPercent}%, #4E5166 ${completedPercent}% 100%)`;
 }
 
+function handleChange(event) {
+    event.preventDefault();
+    
+    goal = Number(document.querySelector("#changeTarget").value);
+    document.querySelector('#target').innerText = goal;
+    calcGoal();
+}
+
 function handle(event) {
     event.preventDefault();
     const entry = Number(document.querySelector("#entry").value);
@@ -55,3 +63,7 @@ function handle(event) {
 const form = document
     .querySelector("form")
     .addEventListener("submit", handle);
+
+const changeTarget = document
+    .querySelector("form#changeForm")
+    .addEventListener("submit", handleChange)
